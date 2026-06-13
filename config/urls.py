@@ -3,7 +3,6 @@ from django.urls import include, path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('products.urls')),
+    path('', include('events.urls')),
 ]
-
-handler404 = 'products.views.page_not_found'
+handler404 = 'events.views.page_not_found'
